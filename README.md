@@ -1,6 +1,3 @@
-Perfect 👌
-Below is a **production-quality `README.md`** you can directly upload to GitHub for your project.
-
 It is:
 
 * ✅ Clean
