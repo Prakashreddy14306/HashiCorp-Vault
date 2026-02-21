@@ -9,13 +9,10 @@ It is:
 * ✅ Structured professionally
 * ✅ Senior-level documentation style
 
-You can copy this directly into `README.md`.
-
 ---
 
 # 📘 README.md
 
-```markdown
 # 🔐 Secure Terraform Deployment using Jenkins + HashiCorp Vault (Dynamic AWS Credentials)
 
 This project demonstrates a **production-grade secure architecture** where:
@@ -87,9 +84,9 @@ Credentials Expire Automatically
 6. AWS infrastructure is created
 7. Credentials expire automatically (TTL-based)
 
----
 
-## 🔐 Vault Configuration (One-Time Setup)
+
+# 🔐 Vault Configuration (One-Time Setup)
 
 ### 1️⃣ Enable AWS Secrets Engine
 
@@ -123,6 +120,11 @@ vault write aws/roles/terraform-role \
   ]
 }
 EOF
+```
+# Fetching the Credentials
+
+```bash
+vault read aws/creds/terraform-role
 ```
 
 ---
